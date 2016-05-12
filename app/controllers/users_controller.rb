@@ -1,5 +1,9 @@
 class UsersController < ApplicationController
   
+  def index
+    @user = User.all
+  end
+
   def show
     @user = User.find(params[:id])
     debugger
@@ -12,6 +16,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
+       log_in @user
        flash[:success] = "Welcome to the Snacks App!"
        redirect_to @user
     else
