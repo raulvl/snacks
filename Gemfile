@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'ruby' '2.2.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.7'
 # to password encription
@@ -60,4 +60,5 @@ end
 group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
+  gem 'puma',           '3.1.0'
 end
