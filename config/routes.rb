@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :categories
+  resources :products
   get 'password_resets/new'
 
   get 'password_resets/edit'

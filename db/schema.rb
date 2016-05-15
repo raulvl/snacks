@@ -11,21 +11,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160515030320) do
+ActiveRecord::Schema.define(version: 20160515224437) do
 
-  create_table "users", force: true do |t|
+  create_table "categories", force: :cascade do |t|
     t.string   "name"
-    t.string   "email"
-    t.datetime "created_at",                        null: false
-    t.datetime "updated_at",                        null: false
-    t.string   "password_digest"
-    t.string   "avatar"
-    t.string   "remember_digest"
-    t.boolean  "admin",             default: false
-    t.string   "activation_digest"
-    t.boolean  "activated",         default: false
+    t.text     "desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "products", force: :cascade do |t|
+    t.string   "name"
+    t.text     "desc"
+    t.string   "brand"
+    t.string   "category_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.string   "image"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string   "name",              limit: 255
+    t.string   "email",             limit: 255
+    t.datetime "created_at",                                    null: false
+    t.datetime "updated_at",                                    null: false
+    t.string   "password_digest",   limit: 255
+    t.string   "avatar",            limit: 255
+    t.string   "remember_digest",   limit: 255
+    t.boolean  "admin",                         default: false
+    t.string   "activation_digest", limit: 255
+    t.boolean  "activated",                     default: false
     t.datetime "activated_at"
-    t.string   "reset_digest"
+    t.string   "reset_digest",      limit: 255
     t.datetime "reset_sent_at"
   end
 
