@@ -52,7 +52,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
 group :development, :test do
   gem 'sqlite3',     '1.3.9'
   gem 'byebug',      '3.4.0'
-  gem 'web-console-rails3', :platforms => :ruby
+  #gem 'web-console-rails3', :platforms => :ruby
   gem 'spring',      '1.1.3'
 end
 
