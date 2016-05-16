@@ -25,6 +25,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'carrierwave'
 # para redimensionar las fotos subidas
 gem 'mini_magick', '~> 4.3'
+gem 'fog',                     '1.36.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
