@@ -1,0 +1,101 @@
+2016-05-16T03:58:12.366261+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-05-16T03:58:12.788909+00:00 heroku[web.1]: Process exited with status 0
+2016-05-16T03:58:16.107129+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-05-16T03:58:16.107152+00:00 app[web.1]: [3] * Version 3.1.0 (ruby 2.2.4-p230), codename: El Niño Winter Wonderland
+2016-05-16T03:58:16.107155+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-05-16T03:58:16.107166+00:00 app[web.1]: [3] * Environment: production
+2016-05-16T03:58:16.107168+00:00 app[web.1]: [3] * Process workers: 2
+2016-05-16T03:58:16.107169+00:00 app[web.1]: [3] * Preloading application
+2016-05-16T03:58:17.823816+00:00 app[web.1]: DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:23)
+2016-05-16T03:58:18.625089+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:58389
+2016-05-16T03:58:18.625356+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-05-16T03:58:18.647581+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-05-16T03:58:18.649326+00:00 app[web.1]: [3] - Worker 1 (pid: 20) booted, phase: 0
+2016-05-16T03:58:18.776352+00:00 heroku[web.1]: State changed from starting to up
+2016-05-16T04:05:00.699167+00:00 heroku[api]: Deploy 7b99c63 by raulvillegasleiva@gmail.com
+2016-05-16T04:05:00.699197+00:00 heroku[api]: Release v16 created by raulvillegasleiva@gmail.com
+2016-05-16T04:05:00.841959+00:00 heroku[slug-compiler]: Slug compilation started
+2016-05-16T04:05:00.841969+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-05-16T04:05:02.663983+00:00 heroku[web.1]: Restarting
+2016-05-16T04:05:02.663983+00:00 heroku[web.1]: State changed from up to starting
+2016-05-16T04:05:05.356468+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-05-16T04:05:05.869359+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-05-16T04:05:06.158469+00:00 app[web.1]: [3] - Worker 0 (pid: 34) booted, phase: 0
+2016-05-16T04:05:06.163990+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-05-16T04:05:06.865654+00:00 app[web.1]: [3] === puma shutdown: 2016-05-16 04:05:06 +0000 ===
+2016-05-16T04:05:06.865672+00:00 app[web.1]: [3] - Goodbye!
+2016-05-16T04:05:07.722928+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-05-16T04:05:07.722972+00:00 app[web.1]: [3] * Version 3.1.0 (ruby 2.2.4-p230), codename: El Niño Winter Wonderland
+2016-05-16T04:05:07.722973+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-05-16T04:05:07.722976+00:00 app[web.1]: [3] * Environment: production
+2016-05-16T04:05:07.722976+00:00 app[web.1]: [3] * Process workers: 2
+2016-05-16T04:05:07.722978+00:00 app[web.1]: [3] * Preloading application
+2016-05-16T04:05:08.772763+00:00 heroku[web.1]: Process exited with status 0
+2016-05-16T04:05:08.896941+00:00 app[web.1]: DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:23)
+2016-05-16T04:05:09.590691+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:56862
+2016-05-16T04:05:09.590841+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-05-16T04:05:09.594633+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-05-16T04:05:09.595616+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-05-16T04:05:09.819768+00:00 heroku[api]: Starting process with command `bundle exec rake db:migrate` by raulvillegasleiva@gmail.com
+2016-05-16T04:05:09.882063+00:00 heroku[web.1]: State changed from starting to up
+2016-05-16T04:05:14.126849+00:00 heroku[run.6158]: Awaiting client
+2016-05-16T04:05:14.153818+00:00 heroku[run.6158]: Starting process with command `bundle exec rake db:migrate`
+2016-05-16T04:05:14.390292+00:00 heroku[run.6158]: State changed from starting to up
+2016-05-16T04:05:18.920639+00:00 heroku[run.6158]: State changed from up to complete
+2016-05-16T04:05:18.941344+00:00 heroku[run.6158]: Process exited with status 0
+2016-05-16T04:05:24.703413+00:00 app[web.1]: Started GET "/" for 201.239.95.134 at 2016-05-16 04:05:24 +0000
+2016-05-16T04:05:24.760867+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.4ms)
+2016-05-16T04:05:24.757615+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (1.5ms)
+2016-05-16T04:05:24.801095+00:00 app[web.1]:   Rendered layouts/_header.html.erb (39.7ms)
+2016-05-16T04:05:24.802444+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.8ms)
+2016-05-16T04:05:24.747151+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2016-05-16T04:05:24.802720+00:00 app[web.1]: Completed 200 OK in 55ms (Views: 41.9ms | ActiveRecord: 6.6ms)
+2016-05-16T04:05:24.789839+00:00 heroku[router]: at=info method=GET path="/" host=foodieapp.herokuapp.com request_id=8205efe0-8e2e-49f4-b258-365a0dc0ef7b fwd="201.239.95.134" dyno=web.1 connect=1ms service=106ms status=200 bytes=3278
+2016-05-16T04:05:25.076827+00:00 heroku[router]: at=info method=GET path="/assets/application-504080db390ce556259ffc216b1657bd.css" host=foodieapp.herokuapp.com request_id=bbd79c93-214d-404d-a593-b431383e7b69 fwd="201.239.95.134" dyno=web.1 connect=1ms service=2ms status=304 bytes=164
+2016-05-16T04:05:25.296226+00:00 heroku[router]: at=info method=GET path="/assets/application-fe96ee59df3451092be34b23b7852e1c.js" host=foodieapp.herokuapp.com request_id=8b846b10-1c7a-43d1-942c-27c530e3b1b7 fwd="201.239.95.134" dyno=web.1 connect=1ms service=5ms status=304 bytes=178
+2016-05-16T04:05:25.297308+00:00 heroku[router]: at=info method=GET path="/assets/snackslogo-dbb24474a3a75270c71c59a19f4bf0dc.jpg" host=foodieapp.herokuapp.com request_id=ab51b9c5-14d3-4517-9c59-c21172abdb1f fwd="201.239.95.134" dyno=web.1 connect=0ms service=2ms status=304 bytes=93
+2016-05-16T04:05:25.603381+00:00 heroku[router]: at=info method=GET path="/assets/favicon-4684ef445e8f0217951ccb49344321ae.ico" host=foodieapp.herokuapp.com request_id=f7953b74-af9e-4055-b132-cfa8233d39ca fwd="201.239.95.134" dyno=web.1 connect=1ms service=2ms status=200 bytes=508
+2016-05-16T04:05:27.857711+00:00 app[web.1]: Started GET "/users" for 201.239.95.134 at 2016-05-16 04:05:27 +0000
+2016-05-16T04:05:27.877697+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
+2016-05-16T04:05:27.872355+00:00 app[web.1]:   Rendered users/_user.html.erb (2.1ms)
+2016-05-16T04:05:27.860571+00:00 app[web.1]: Processing by UsersController#index as HTML
+2016-05-16T04:05:27.874166+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.2ms)
+2016-05-16T04:05:27.872432+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (7.7ms)
+2016-05-16T04:05:27.878246+00:00 app[web.1]: Completed 200 OK in 18ms (Views: 12.8ms | ActiveRecord: 2.1ms)
+2016-05-16T04:05:27.876848+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.2ms)
+2016-05-16T04:05:27.853656+00:00 heroku[router]: at=info method=GET path="/users" host=foodieapp.herokuapp.com request_id=be2db1a4-dd4b-4a70-b6a8-b851c7e757ca fwd="201.239.95.134" dyno=web.1 connect=1ms service=23ms status=200 bytes=3236
+2016-05-16T04:05:31.935280+00:00 heroku[router]: at=info method=GET path="/users/1/edit" host=foodieapp.herokuapp.com request_id=1d1d15b3-3fea-44cd-98d5-1d096a9bd39d fwd="201.239.95.134" dyno=web.1 connect=1ms service=11ms status=500 bytes=1714
+2016-05-16T04:05:31.952267+00:00 app[web.1]: Started GET "/users/1/edit" for 201.239.95.134 at 2016-05-16 04:05:31 +0000
+2016-05-16T04:05:31.954231+00:00 app[web.1]: Processing by UsersController#edit as HTML
+2016-05-16T04:05:31.954268+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2016-05-16T04:05:31.958964+00:00 app[web.1]: PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+2016-05-16T04:05:31.958972+00:00 app[web.1]: LINE 1: SELECT  "users".* FROM "users" WHERE (1) LIMIT 1
+2016-05-16T04:05:31.958973+00:00 app[web.1]:                                               ^
+2016-05-16T04:05:31.958973+00:00 app[web.1]: : SELECT  "users".* FROM "users" WHERE (1) LIMIT 1
+2016-05-16T04:05:31.960798+00:00 app[web.1]:   app/controllers/users_controller.rb:37:in `edit'
+2016-05-16T04:05:31.960799+00:00 app[web.1]: 
+2016-05-16T04:05:31.960799+00:00 app[web.1]: 
+2016-05-16T04:05:31.960789+00:00 app[web.1]: 
+2016-05-16T04:05:32.187175+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2016-05-16T04:05:31.959597+00:00 app[web.1]: Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.1ms)
+2016-05-16T04:05:32.187163+00:00 app[web.1]: Processing by UsersController#edit as HTML
+2016-05-16T04:05:31.960796+00:00 app[web.1]: ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+2016-05-16T04:05:32.192559+00:00 app[web.1]: PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+2016-05-16T04:05:31.960797+00:00 app[web.1]: LINE 1: SELECT  "users".* FROM "users" WHERE (1) LIMIT 1
+2016-05-16T04:05:32.192571+00:00 app[web.1]: LINE 1: SELECT  "users".* FROM "users" WHERE (1) LIMIT 1
+2016-05-16T04:05:31.960798+00:00 app[web.1]:                                               ^
+2016-05-16T04:05:32.192572+00:00 app[web.1]:                                               ^
+2016-05-16T04:05:31.960798+00:00 app[web.1]: : SELECT  "users".* FROM "users" WHERE (1) LIMIT 1):
+2016-05-16T04:05:32.192701+00:00 app[web.1]: Completed 500 Internal Server Error in 5ms (ActiveRecord: 2.1ms)
+2016-05-16T04:05:32.192573+00:00 app[web.1]: : SELECT  "users".* FROM "users" WHERE (1) LIMIT 1
+2016-05-16T04:05:32.193933+00:00 app[web.1]: 
+2016-05-16T04:05:32.193944+00:00 app[web.1]: ActiveRecord::StatementInvalid (PG::DatatypeMismatch: ERROR:  argument of WHERE must be type boolean, not type integer
+2016-05-16T04:05:32.185929+00:00 app[web.1]: Started GET "/users/1/edit" for 201.239.95.134 at 2016-05-16 04:05:32 +0000
+2016-05-16T04:05:32.193944+00:00 app[web.1]: LINE 1: SELECT  "users".* FROM "users" WHERE (1) LIMIT 1
+2016-05-16T04:05:32.193945+00:00 app[web.1]: : SELECT  "users".* FROM "users" WHERE (1) LIMIT 1):
+2016-05-16T04:05:32.193945+00:00 app[web.1]:                                               ^
+2016-05-16T04:05:32.193946+00:00 app[web.1]:   app/controllers/users_controller.rb:37:in `edit'
+2016-05-16T04:05:32.193946+00:00 app[web.1]: 
+2016-05-16T04:05:32.193947+00:00 app[web.1]: 
+2016-05-16T04:05:32.169023+00:00 heroku[router]: at=info method=GET path="/users/1/edit" host=foodieapp.herokuapp.com request_id=55c80e9e-384e-4c39-86b0-48b80e4a6600 fwd="201.239.95.134" dyno=web.1 connect=1ms service=10ms status=500 bytes=1714
+2016-05-16T04:05:32.492325+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=foodieapp.herokuapp.com request_id=99f0c9d0-f22c-4bc8-8b99-7d65bf55a3db fwd="201.239.95.134" dyno=web.1 connect=1ms service=2ms status=200 bytes=188
