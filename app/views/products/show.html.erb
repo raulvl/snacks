@@ -1,29 +1,41 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
 
-<p>
-  <strong>Name:</strong>
-  <%= @product.name %>
-</p>
+        <!-- Portfolio Item Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header" style="float: left;"> <%= @product.name %>
+                    <small><%= @product.brand %></small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
 
-<p>
-  <strong>Desc:</strong>
-  <%= @product.desc %>
-</p>
+        <!-- Portfolio Item Row -->
+        <div class="row">
+            <div class="col-md-8">
+               <%= image_tag @product.image.url, class: 'img-responsive', style:"width: 650px; height:400px;" %>
+            </div>
 
-<p>
-  <strong>Brand:</strong>
-  <%= @product.brand %>
-</p>
+            <div class="col-md-4">
+                <h3>Description</h3>
+                <p> <%= @product.desc %></p>
+            </div>
+        </div>
+        <!-- /.row -->
+        <%  if current_user.admin? %>
+            <%= link_to 'Edit', edit_product_path(@product) %> |
+            <%= link_to 'Back', products_path %>
+        <% end %>
+        <!-- Related Projects Row -->
+        <div class="row">
 
-<p>
-  <strong>Category:</strong>
-  <%= @product.category.name %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @product.image.thumb.url %>
-</p>
-
-<%= link_to 'Edit', edit_product_path(@product) %> |
-<%= link_to 'Back', products_path %>
+            <div class="col-lg-12">
+                <h3 class="page-header">Related Products</h3>
+            </div>
+            <% Product.where(category_id: @product.category.id).each do |product| %>
+                    <div class="col-sm-3 col-xs-6">
+                <%= link_to  image_tag(product.image.url, class: 'img-responsive'), product, style:"width: 163px; height:163px;"%>
+            </div>
+            <% end %>
+        </div>
+        <!-- /.row -->

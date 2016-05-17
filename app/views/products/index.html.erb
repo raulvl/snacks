@@ -1,12 +1,12 @@
 <% provide(:title, 'All Snacks') %>
-<p id="notice"><%= notice %></p>
 <h1>Listing Snacks</h1>
 <%= will_paginate %>
-<ul class="snacks">
+<div class="row">
   <%= render @products %>
- </ul>
-<br>
+</div>
 <% if current_user.admin? %>
 <%= link_to 'New Product', new_product_path %>
 <% end %>
 <%= will_paginate %>
+
+

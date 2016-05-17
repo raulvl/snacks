@@ -25,8 +25,9 @@
     <%= f.label :category_id %><br>
     <%= select_tag(:category_id, options_for_select(@categories), class: 'form-control', :prompt => "Select one!") %>
 
-    <%= f.label :image %><br>
-    <%= f.file_field :image %>
+    <%= f.label :image %>
+    <%= image_tag @product.image.thumb.url, class: "img-circle" %>
+   <%= f.file_field :image, class: 'form-control' %>
  
     <%= f.submit "Create Product", class: "btn btn-primary"%>
   </div>

@@ -1,9 +1,16 @@
-<li>
-	<%= image_tag product.image.thumb.url, class: "img-circle" %>
-	<%= link_to product.name, product %>
-	<%= link_to Category.find(product.category_id).name, category_path(product.category_id) %>
-  <% if current_user.admin? %>
-	  <%= link_to 'Edit', edit_product_path(product) %>
-	  <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %>
-  <% end %>
-</li>
+<div class="col-sm-6 col-md-4">
+    <div class="thumsbnail" style="min-height:350px;height:350px;">
+      <%= image_tag product.image.url, class: "img-circle", style: "height: 100px; width: 100px" %>
+      <div class="caption">
+        <h3><%= link_to product.name, product %></h3>
+        <p><%= link_to Category.find(product.category_id).name, category_path(product.category_id)%></p>
+        <p><%= product.desc %></p>
+		    <% if current_user.admin? %>
+		 	 		<p><%= link_to "Edit", edit_product_path(product), class: "btn btn-default glyphicon glyphicon-edit" %>
+			 		<%= link_to 'Delete', product, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-default glyphicon glyphicon-remove" %></p>
+			  <% end %>	
+    </div>
+        
+    </div>
+   
+  </div>
