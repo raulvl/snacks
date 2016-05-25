@@ -1,101 +1,101 @@
-2016-05-16T04:21:53.244243+00:00 heroku[router]: at=info method=POST path="/users/1" host=foodieapp.herokuapp.com request_id=edb4916b-36df-4349-a984-3074a68248bb fwd="201.239.95.134" dyno=web.1 connect=2ms service=734ms status=302 bytes=1042
-2016-05-16T04:21:53.504930+00:00 heroku[router]: at=info method=GET path="/users/1" host=foodieapp.herokuapp.com request_id=95930794-9d95-48df-ae4a-fa7c27758db8 fwd="201.239.95.134" dyno=web.1 connect=1ms service=36ms status=200 bytes=3633
-2016-05-16T04:21:53.477719+00:00 app[web.1]: Started GET "/users/1" for 201.239.95.134 at 2016-05-16 04:21:53 +0000
-2016-05-16T04:21:53.480210+00:00 app[web.1]: Processing by UsersController#show as HTML
-2016-05-16T04:21:53.489060+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (2.5ms)
-2016-05-16T04:21:53.480543+00:00 app[web.1]:   Parameters: {"id"=>"1"}
-2016-05-16T04:21:53.494131+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.4ms)
-2016-05-16T04:21:53.500680+00:00 app[web.1]:   Rendered layouts/_header.html.erb (5.7ms)
-2016-05-16T04:21:53.503096+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.4ms)
-2016-05-16T04:21:53.503687+00:00 app[web.1]: Completed 200 OK in 23ms (Views: 18.5ms | ActiveRecord: 2.3ms)
-2016-05-16T04:21:53.808729+00:00 heroku[router]: at=info method=GET path="/assets/application-504080db390ce556259ffc216b1657bd.css" host=foodieapp.herokuapp.com request_id=7b9b74ef-67d3-4a92-afaa-8e25720208ad fwd="201.239.95.134" dyno=web.1 connect=1ms service=4ms status=304 bytes=164
-2016-05-16T04:21:54.031019+00:00 heroku[router]: at=info method=GET path="/assets/application-fe96ee59df3451092be34b23b7852e1c.js" host=foodieapp.herokuapp.com request_id=221ccd77-66bc-4d1d-bbe7-3da329c6fe83 fwd="201.239.95.134" dyno=web.1 connect=1ms service=5ms status=304 bytes=178
-2016-05-16T04:21:54.978568+00:00 heroku[router]: at=info method=GET path="/assets/favicon-4684ef445e8f0217951ccb49344321ae.ico" host=foodieapp.herokuapp.com request_id=80ffb8a3-fd52-4011-918e-81f0879b5331 fwd="201.239.95.134" dyno=web.1 connect=1ms service=3ms status=200 bytes=508
-2016-05-16T04:24:24.907748+00:00 app[web.1]: Processing by ProductsController#index as HTML
-2016-05-16T04:24:24.961592+00:00 app[web.1]:   Rendered products/index.html.erb within layouts/application (33.7ms)
-2016-05-16T04:24:24.960854+00:00 app[web.1]:   Rendered collection (0.1ms)
-2016-05-16T04:24:24.895371+00:00 app[web.1]: Started GET "/products" for 201.239.95.134 at 2016-05-16 04:24:24 +0000
-2016-05-16T04:24:24.975121+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.9ms)
-2016-05-16T04:24:24.992621+00:00 app[web.1]:   Rendered layouts/_header.html.erb (14.1ms)
-2016-05-16T04:24:24.995170+00:00 app[web.1]: Completed 200 OK in 87ms (Views: 59.2ms | ActiveRecord: 15.4ms)
-2016-05-16T04:24:24.994756+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.1ms)
-2016-05-16T04:24:24.998498+00:00 heroku[router]: at=info method=GET path="/products" host=foodieapp.herokuapp.com request_id=67c60602-e826-4288-981f-09b0222843f9 fwd="201.239.95.134" dyno=web.1 connect=3ms service=114ms status=200 bytes=3023
-2016-05-16T04:24:40.588247+00:00 heroku[router]: at=info method=GET path="/users" host=foodieapp.herokuapp.com request_id=05b97e01-f587-4d66-b2e1-013efee96cd7 fwd="201.239.95.134" dyno=web.1 connect=1ms service=20ms status=200 bytes=3236
-2016-05-16T04:24:40.572487+00:00 app[web.1]: Started GET "/users" for 201.239.95.134 at 2016-05-16 04:24:40 +0000
-2016-05-16T04:24:40.574775+00:00 app[web.1]: Processing by UsersController#index as HTML
-2016-05-16T04:24:40.586217+00:00 app[web.1]:   Rendered users/_user.html.erb (2.7ms)
-2016-05-16T04:24:40.586334+00:00 app[web.1]:   Rendered users/index.html.erb within layouts/application (8.1ms)
-2016-05-16T04:24:40.586937+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
-2016-05-16T04:24:40.588518+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.9ms)
-2016-05-16T04:24:40.588821+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
-2016-05-16T04:24:40.589079+00:00 app[web.1]: Completed 200 OK in 14ms (Views: 9.3ms | ActiveRecord: 3.5ms)
-2016-05-16T04:24:42.803702+00:00 heroku[router]: at=info method=GET path="/users/1" host=foodieapp.herokuapp.com request_id=28b1b56a-31c8-4f55-b89f-80456b463286 fwd="201.239.95.134" dyno=web.1 connect=1ms service=17ms status=200 bytes=3323
-2016-05-16T04:24:42.791606+00:00 app[web.1]: Started GET "/users/1" for 201.239.95.134 at 2016-05-16 04:24:42 +0000
-2016-05-16T04:24:42.794010+00:00 app[web.1]: Processing by UsersController#show as HTML
-2016-05-16T04:24:42.794047+00:00 app[web.1]:   Parameters: {"id"=>"1"}
-2016-05-16T04:24:42.798622+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (1.3ms)
-2016-05-16T04:24:42.799739+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
-2016-05-16T04:24:42.803200+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.2ms)
-2016-05-16T04:24:42.804118+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.2ms)
-2016-05-16T04:24:42.804412+00:00 app[web.1]: Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 2.2ms)
-2016-05-16T04:24:54.548159+00:00 heroku[router]: at=info method=GET path="/products" host=foodieapp.herokuapp.com request_id=5c3be173-7983-4ca6-9fd1-0a1dc178da7b fwd="201.239.95.134" dyno=web.1 connect=1ms service=18ms status=200 bytes=3023
-2016-05-16T04:24:54.537147+00:00 app[web.1]: Started GET "/products" for 201.239.95.134 at 2016-05-16 04:24:54 +0000
-2016-05-16T04:24:54.539740+00:00 app[web.1]: Processing by ProductsController#index as HTML
-2016-05-16T04:24:54.546719+00:00 app[web.1]:   Rendered collection (0.0ms)
-2016-05-16T04:24:54.547506+00:00 app[web.1]:   Rendered products/index.html.erb within layouts/application (4.2ms)
-2016-05-16T04:24:54.548246+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.0ms)
-2016-05-16T04:24:54.549136+00:00 app[web.1]:   Rendered layouts/_header.html.erb (0.7ms)
-2016-05-16T04:24:54.549376+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.1ms)
-2016-05-16T04:24:54.549663+00:00 app[web.1]: Completed 200 OK in 10ms (Views: 4.8ms | ActiveRecord: 3.5ms)
-2016-05-16T04:27:27.321046+00:00 heroku[api]: Starting process with command `bin/rails console` by raulvillegasleiva@gmail.com
-2016-05-16T04:27:32.343226+00:00 heroku[run.1520]: Awaiting client
-2016-05-16T04:27:32.363978+00:00 heroku[run.1520]: Starting process with command `bin/rails console`
-2016-05-16T04:27:32.612462+00:00 heroku[run.1520]: State changed from starting to up
-2016-05-16T04:28:07.137151+00:00 heroku[router]: at=info method=GET path="/products" host=foodieapp.herokuapp.com request_id=467cb84f-07c6-4660-a133-a4504b1b149d fwd="201.239.95.134" dyno=web.1 connect=2ms service=146ms status=200 bytes=3063
-2016-05-16T04:28:06.993543+00:00 app[web.1]: Started GET "/products" for 201.239.95.134 at 2016-05-16 04:28:06 +0000
-2016-05-16T04:28:07.054488+00:00 app[web.1]: Processing by ProductsController#index as HTML
-2016-05-16T04:28:07.115462+00:00 app[web.1]:   Rendered collection (0.0ms)
-2016-05-16T04:28:07.118194+00:00 app[web.1]:   Rendered products/index.html.erb within layouts/application (13.2ms)
-2016-05-16T04:28:07.122883+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.5ms)
-2016-05-16T04:28:07.128862+00:00 app[web.1]:   Rendered layouts/_header.html.erb (5.2ms)
-2016-05-16T04:28:07.130841+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (1.2ms)
-2016-05-16T04:28:07.131209+00:00 app[web.1]: Completed 200 OK in 77ms (Views: 23.4ms | ActiveRecord: 13.6ms)
-2016-05-16T04:28:07.453093+00:00 heroku[router]: at=info method=GET path="/assets/application-504080db390ce556259ffc216b1657bd.css" host=foodieapp.herokuapp.com request_id=453f37de-8938-4cda-8c49-c6293aaee731 fwd="201.239.95.134" dyno=web.1 connect=1ms service=17ms status=304 bytes=164
-2016-05-16T04:28:07.683086+00:00 heroku[router]: at=info method=GET path="/assets/application-fe96ee59df3451092be34b23b7852e1c.js" host=foodieapp.herokuapp.com request_id=2893f0de-d389-4605-b498-36222d7dbd79 fwd="201.239.95.134" dyno=web.1 connect=1ms service=2ms status=304 bytes=178
-2016-05-16T04:28:07.984764+00:00 heroku[router]: at=info method=GET path="/assets/favicon-4684ef445e8f0217951ccb49344321ae.ico" host=foodieapp.herokuapp.com request_id=4f54e8d5-752d-403a-9504-d14c45efd6bc fwd="201.239.95.134" dyno=web.1 connect=1ms service=2ms status=200 bytes=508
-2016-05-16T04:28:11.941323+00:00 heroku[run.1520]: Process exited with status 0
-2016-05-16T04:28:11.973342+00:00 heroku[run.1520]: State changed from up to complete
-2016-05-16T04:28:14.733097+00:00 app[web.1]: Started GET "/products/new" for 201.239.95.134 at 2016-05-16 04:28:14 +0000
-2016-05-16T04:28:14.736123+00:00 app[web.1]: Processing by ProductsController#new as HTML
-2016-05-16T04:28:15.197931+00:00 heroku[router]: at=info method=GET path="/products/new" host=foodieapp.herokuapp.com request_id=991f6f2b-9413-42fa-b300-7d9f833910c3 fwd="201.239.95.134" dyno=web.1 connect=1ms service=460ms status=200 bytes=4195
-2016-05-16T04:28:15.183319+00:00 app[web.1]:   Rendered products/_form.html.erb (430.3ms)
-2016-05-16T04:28:15.183468+00:00 app[web.1]:   Rendered products/new.html.erb within layouts/application (431.6ms)
-2016-05-16T04:28:15.184699+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.3ms)
-2016-05-16T04:28:15.188149+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.9ms)
-2016-05-16T04:28:15.189072+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.4ms)
-2016-05-16T04:28:15.189285+00:00 app[web.1]: Completed 200 OK in 453ms (Views: 436.9ms | ActiveRecord: 5.7ms)
-2016-05-16T04:29:17.841914+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"Gk2f2JAvysY0pSXTNaScR6RX0kHC/Br7eLYktp3UwNwItt3LtBQ+iXpk7oHdvAvqep7sfQpyrmCHwOd+osjJNA==", "product"=>{"name"=>"Snickers", "desc"=>"Chocolate with toffe and almonds", "brand"=>"Snickers", "image"=>#<ActionDispatch::Http::UploadedFile:0x007f2568275e90 @tempfile=#<Tempfile:/tmp/RackMultipart20160516-6-1wlrzt8.jpg>, @original_filename="Stephs-Snickers-Cake-Snickers-bar.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"product[image]\"; filename=\"Stephs-Snickers-Cake-Snickers-bar.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "category_id"=>"", "commit"=>"Create Product"}
-2016-05-16T04:29:17.838747+00:00 app[web.1]: Started POST "/products" for 201.239.95.134 at 2016-05-16 04:29:17 +0000
-2016-05-16T04:29:17.841643+00:00 app[web.1]: Processing by ProductsController#create as HTML
-2016-05-16T04:29:18.163874+00:00 heroku[router]: at=info method=POST path="/products" host=foodieapp.herokuapp.com request_id=6e4a82fc-9c8c-4b04-a3bf-70c3c1fbbb8f fwd="201.239.95.134" dyno=web.1 connect=1ms service=4955ms status=302 bytes=1079
-2016-05-16T04:29:18.154976+00:00 app[web.1]: Redirected to https://foodieapp.herokuapp.com/products/1
-2016-05-16T04:29:18.155142+00:00 app[web.1]: Completed 302 Found in 311ms (ActiveRecord: 6.6ms)
-2016-05-16T04:29:18.400736+00:00 app[web.1]: Started GET "/products/1" for 201.239.95.134 at 2016-05-16 04:29:18 +0000
-2016-05-16T04:29:18.403013+00:00 app[web.1]: Processing by ProductsController#show as HTML
-2016-05-16T04:29:18.403055+00:00 app[web.1]:   Parameters: {"id"=>"1"}
-2016-05-16T04:29:18.431697+00:00 heroku[router]: at=info method=GET path="/products/1" host=foodieapp.herokuapp.com request_id=c5fe5d13-bac5-41d1-a2e5-facf423186ac fwd="201.239.95.134" dyno=web.1 connect=1ms service=27ms status=500 bytes=1714
-2016-05-16T04:29:18.421506+00:00 app[web.1]:   Rendered products/show.html.erb within layouts/application (12.9ms)
-2016-05-16T04:29:18.421880+00:00 app[web.1]: Completed 500 Internal Server Error in 19ms (ActiveRecord: 3.8ms)
-2016-05-16T04:29:18.422923+00:00 app[web.1]: 
-2016-05-16T04:29:18.422936+00:00 app[web.1]: ActionView::Template::Error (undefined method `name' for nil:NilClass):
-2016-05-16T04:29:18.422937+00:00 app[web.1]:     17: 
-2016-05-16T04:29:18.422937+00:00 app[web.1]:     18: <p>
-2016-05-16T04:29:18.422938+00:00 app[web.1]:     19:   <strong>Category:</strong>
-2016-05-16T04:29:18.422939+00:00 app[web.1]:     20:   <%= @product.category.name %>
-2016-05-16T04:29:18.422940+00:00 app[web.1]:     21: </p>
-2016-05-16T04:29:18.422940+00:00 app[web.1]:     22: 
-2016-05-16T04:29:18.422941+00:00 app[web.1]:     23: <p>
-2016-05-16T04:29:18.422942+00:00 app[web.1]:   app/views/products/show.html.erb:20:in `_app_views_products_show_html_erb___3816111513757911140_69899317648020'
-2016-05-16T04:29:18.422943+00:00 app[web.1]: 
-2016-05-16T04:29:18.422943+00:00 app[web.1]: 
-2016-05-16T04:29:18.758728+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=foodieapp.herokuapp.com request_id=fa330b12-1d0f-4704-b131-a25703d04736 fwd="201.239.95.134" dyno=web.1 connect=1ms service=2ms status=304 bytes=93
+2016-05-21T06:19:11.482909+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2016-05-21T06:19:11.491819+00:00 app[web.1]:   Rendered users/show.html.erb within layouts/application (1.8ms)
+2016-05-21T06:19:11.493955+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.1ms)
+2016-05-21T06:19:11.497959+00:00 app[web.1]:   Rendered layouts/_header.html.erb (3.0ms)
+2016-05-21T06:19:11.498422+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.2ms)
+2016-05-21T06:19:11.498725+00:00 app[web.1]: Completed 200 OK in 16ms (Views: 9.2ms | ActiveRecord: 2.6ms)
+2016-05-21T06:19:14.241726+00:00 heroku[router]: at=info method=GET path="/products" host=foodieapp.herokuapp.com request_id=ff52e394-d52b-4eb5-b566-04ed8a6dc511 fwd="201.239.95.134" dyno=web.1 connect=1ms service=89ms status=200 bytes=4435
+2016-05-21T06:19:14.152899+00:00 app[web.1]: Started GET "/products" for 201.239.95.134 at 2016-05-21 06:19:14 +0000
+2016-05-21T06:19:14.165066+00:00 app[web.1]: Processing by ProductsController#index as HTML
+2016-05-21T06:19:14.229868+00:00 app[web.1]:   Rendered products/_product.html.erb (22.0ms)
+2016-05-21T06:19:14.230301+00:00 app[web.1]:   Rendered products/index.html.erb within layouts/application (56.8ms)
+2016-05-21T06:19:14.232342+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.1ms)
+2016-05-21T06:19:14.234625+00:00 app[web.1]:   Rendered layouts/_header.html.erb (2.0ms)
+2016-05-21T06:19:14.235273+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.2ms)
+2016-05-21T06:19:14.235809+00:00 app[web.1]: Completed 200 OK in 71ms (Views: 41.6ms | ActiveRecord: 23.6ms)
+2016-05-21T06:19:14.513467+00:00 heroku[router]: at=info method=GET path="/assets/bootstrap/glyphicons-halflings-regular-9c07af7918beddae7783f7b6850f0436.woff" host=foodieapp.herokuapp.com request_id=7980c66f-43d3-443a-b26c-bd8c4c99ecea fwd="201.239.95.134" dyno=web.1 connect=1ms service=11ms status=304 bytes=93
+2016-05-21T06:19:17.192909+00:00 app[web.1]: Started GET "/products/1" for 201.239.95.134 at 2016-05-21 06:19:17 +0000
+2016-05-21T06:19:17.195633+00:00 app[web.1]: Processing by ProductsController#show as HTML
+2016-05-21T06:19:17.195660+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2016-05-21T06:19:17.282534+00:00 app[web.1]:   Rendered products/show.html.erb within layouts/application (65.7ms)
+2016-05-21T06:19:17.283904+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.1ms)
+2016-05-21T06:19:17.294271+00:00 app[web.1]:   Rendered layouts/_header.html.erb (10.1ms)
+2016-05-21T06:19:17.294827+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.2ms)
+2016-05-21T06:19:17.295223+00:00 app[web.1]: Completed 200 OK in 99ms (Views: 49.7ms | ActiveRecord: 44.7ms)
+2016-05-21T06:19:17.302670+00:00 heroku[router]: at=info method=GET path="/products/1" host=foodieapp.herokuapp.com request_id=8ee16297-8a01-4361-ad2a-fe49be0bbe39 fwd="201.239.95.134" dyno=web.1 connect=1ms service=110ms status=200 bytes=5018
+2016-05-21T06:19:20.964083+00:00 app[web.1]: Started GET "/" for 201.239.95.134 at 2016-05-21 06:19:20 +0000
+2016-05-21T06:19:21.069808+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2016-05-21T06:19:21.090872+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (1.9ms)
+2016-05-21T06:19:21.099119+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.9ms)
+2016-05-21T06:19:21.172709+00:00 app[web.1]:   Rendered layouts/_header.html.erb (72.4ms)
+2016-05-21T06:19:21.174221+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.5ms)
+2016-05-21T06:19:21.174950+00:00 app[web.1]: Completed 200 OK in 105ms (Views: 74.7ms | ActiveRecord: 14.2ms)
+2016-05-21T06:19:21.178996+00:00 heroku[router]: at=info method=GET path="/" host=foodieapp.herokuapp.com request_id=8daa9e32-cdda-4590-8cf0-7e1f14cf7c67 fwd="201.239.95.134" dyno=web.1 connect=1ms service=218ms status=200 bytes=3734
+2016-05-21T06:19:24.995951+00:00 heroku[router]: at=info method=GET path="/" host=foodieapp.herokuapp.com request_id=eddc54c4-7559-4fd0-8a59-941761b7e60f fwd="201.239.95.134" dyno=web.1 connect=1ms service=38ms status=200 bytes=3734
+2016-05-21T06:19:24.958778+00:00 app[web.1]: Started GET "/" for 201.239.95.134 at 2016-05-21 06:19:24 +0000
+2016-05-21T06:19:24.966241+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2016-05-21T06:19:24.973681+00:00 app[web.1]:   Rendered static_pages/home.html.erb within layouts/application (5.4ms)
+2016-05-21T06:19:24.975793+00:00 app[web.1]:   Rendered layouts/_shim.html.erb (0.4ms)
+2016-05-21T06:19:24.990327+00:00 app[web.1]:   Rendered layouts/_header.html.erb (13.3ms)
+2016-05-21T06:19:24.991950+00:00 app[web.1]:   Rendered layouts/_footer.html.erb (0.6ms)
+2016-05-21T06:19:24.992170+00:00 app[web.1]: Completed 200 OK in 26ms (Views: 23.2ms | ActiveRecord: 1.4ms)
+2016-05-21T06:19:26.814755+00:00 heroku[router]: at=info method=GET path="/assets/application-fe96ee59df3451092be34b23b7852e1c.js" host=foodieapp.herokuapp.com request_id=1872e9f1-60ce-46d9-adb1-a2fa7378288b fwd="201.239.95.134" dyno=web.1 connect=1ms service=2ms status=304 bytes=178
+2016-05-21T06:19:26.810064+00:00 heroku[router]: at=info method=GET path="/assets/application-25dce7fc5d8795135a0a3e017bec1ba4.css" host=foodieapp.herokuapp.com request_id=45c9d05b-3a45-4e63-9488-920b638529ba fwd="201.239.95.134" dyno=web.1 connect=1ms service=5ms status=304 bytes=164
+2016-05-21T06:19:28.961251+00:00 heroku[router]: at=info method=GET path="/assets/favicon-4684ef445e8f0217951ccb49344321ae.ico" host=foodieapp.herokuapp.com request_id=8a1518ff-bbca-49c6-8594-ad80d26b9fc4 fwd="201.239.95.134" dyno=web.1 connect=2ms service=5ms status=200 bytes=508
+2016-05-21T06:53:12.621808+00:00 heroku[web.1]: Idling
+2016-05-21T06:53:12.622383+00:00 heroku[web.1]: State changed from up to down
+2016-05-21T06:53:16.359319+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2016-05-21T06:53:17.045111+00:00 app[web.1]: [3] - Gracefully shutting down workers...
+2016-05-21T06:53:17.135101+00:00 app[web.1]: [3] === puma shutdown: 2016-05-21 06:53:17 +0000 ===
+2016-05-21T06:53:17.135116+00:00 app[web.1]: [3] - Goodbye!
+2016-05-21T06:53:17.966539+00:00 heroku[web.1]: Process exited with status 0
+2016-05-25T20:09:59.584408+00:00 heroku[api]: Deploy ddabd65 by raulvillegasleiva@gmail.com
+2016-05-25T20:09:59.841323+00:00 heroku[slug-compiler]: Slug compilation finished
+2016-05-25T20:09:59.841318+00:00 heroku[slug-compiler]: Slug compilation started
+2016-05-25T20:09:59.584408+00:00 heroku[api]: Release v22 created by raulvillegasleiva@gmail.com
+2016-05-25T20:10:08.657772+00:00 heroku[web.1]: State changed from down to starting
+2016-05-25T20:10:08.657353+00:00 heroku[web.1]: Unidling
+2016-05-25T20:10:14.198324+00:00 heroku[web.1]: Starting process with command `bundle exec puma -C config/puma.rb`
+2016-05-25T20:10:17.696045+00:00 app[web.1]: [3] * Version 3.1.0 (ruby 2.2.4-p230), codename: El Niño Winter Wonderland
+2016-05-25T20:10:17.696022+00:00 app[web.1]: [3] Puma starting in cluster mode...
+2016-05-25T20:10:17.696058+00:00 app[web.1]: [3] * Preloading application
+2016-05-25T20:10:17.696058+00:00 app[web.1]: [3] * Process workers: 2
+2016-05-25T20:10:17.696057+00:00 app[web.1]: [3] * Environment: production
+2016-05-25T20:10:17.696049+00:00 app[web.1]: [3] * Min threads: 5, max threads: 5
+2016-05-25T20:10:19.795804+00:00 app[web.1]: DEPRECATION WARNING: The configuration option `config.serve_static_assets` has been renamed to `config.serve_static_files` to clarify its role (it merely enables serving everything in the `public` folder and is unrelated to the asset pipeline). The `serve_static_assets` alias will be removed in Rails 5.0. Please migrate your configuration files accordingly. (called from block in <top (required)> at /app/config/environments/production.rb:23)
+2016-05-25T20:10:20.650299+00:00 app[web.1]: [3] Use Ctrl-C to stop
+2016-05-25T20:10:20.658921+00:00 app[web.1]: [3] - Worker 1 (pid: 10) booted, phase: 0
+2016-05-25T20:10:20.657200+00:00 app[web.1]: [3] - Worker 0 (pid: 6) booted, phase: 0
+2016-05-25T20:10:20.650043+00:00 app[web.1]: [3] * Listening on tcp://0.0.0.0:44229
+2016-05-25T20:10:20.942753+00:00 heroku[web.1]: State changed from starting to up
+2016-05-25T20:10:22.907237+00:00 app[web.1]: Processing by StaticPagesController#home as HTML
+2016-05-25T20:10:22.747059+00:00 app[web.1]: Started GET "/" for 201.239.95.134 at 2016-05-25 20:10:22 +0000
+2016-05-25T20:10:23.019871+00:00 app[web.1]: PG::UndefinedTable: ERROR:  relation "reviews" does not exist
+2016-05-25T20:10:23.019886+00:00 app[web.1]: LINE 5:                WHERE a.attrelid = '"reviews"'::regclass
+2016-05-25T20:10:23.019887+00:00 app[web.1]:                                           ^
+2016-05-25T20:10:23.019888+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2016-05-25T20:10:23.019889+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+2016-05-25T20:10:23.019891+00:00 app[web.1]:                WHERE a.attrelid = '"reviews"'::regclass
+2016-05-25T20:10:23.019893+00:00 app[web.1]: 
+2016-05-25T20:10:23.020185+00:00 app[web.1]: Completed 500 Internal Server Error in 113ms (ActiveRecord: 40.1ms)
+2016-05-25T20:10:23.021952+00:00 app[web.1]: 
+2016-05-25T20:10:23.019892+00:00 app[web.1]:                ORDER BY a.attnum
+2016-05-25T20:10:23.019892+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2016-05-25T20:10:23.019890+00:00 app[web.1]:                 FROM pg_attribute a LEFT JOIN pg_attrdef d
+2016-05-25T20:10:23.019890+00:00 app[web.1]:                   ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2016-05-25T20:10:23.021965+00:00 app[web.1]: LINE 5:                WHERE a.attrelid = '"reviews"'::regclass
+2016-05-25T20:10:23.021966+00:00 app[web.1]:                                           ^
+2016-05-25T20:10:23.021963+00:00 app[web.1]: ActiveRecord::StatementInvalid (PG::UndefinedTable: ERROR:  relation "reviews" does not exist
+2016-05-25T20:10:23.021969+00:00 app[web.1]:                WHERE a.attrelid = '"reviews"'::regclass
+2016-05-25T20:10:23.021967+00:00 app[web.1]:                      pg_get_expr(d.adbin, d.adrelid), a.attnotnull, a.atttypid, a.atttypmod
+2016-05-25T20:10:23.021968+00:00 app[web.1]:                 FROM pg_attribute a LEFT JOIN pg_attrdef d
+2016-05-25T20:10:23.021967+00:00 app[web.1]: :               SELECT a.attname, format_type(a.atttypid, a.atttypmod),
+2016-05-25T20:10:23.021969+00:00 app[web.1]:                   ON a.attrelid = d.adrelid AND a.attnum = d.adnum
+2016-05-25T20:10:23.021972+00:00 app[web.1]:   app/controllers/static_pages_controller.rb:4:in `home'
+2016-05-25T20:10:23.021971+00:00 app[web.1]: ):
+2016-05-25T20:10:23.021973+00:00 app[web.1]: 
+2016-05-25T20:10:23.021973+00:00 app[web.1]: 
+2016-05-25T20:10:23.021970+00:00 app[web.1]:                  AND a.attnum > 0 AND NOT a.attisdropped
+2016-05-25T20:10:23.021970+00:00 app[web.1]:                ORDER BY a.attnum
+2016-05-25T20:10:23.026481+00:00 heroku[router]: at=info method=GET path="/" host=foodieapp.herokuapp.com request_id=608879be-6d0b-4983-aa31-c587ae288130 fwd="201.239.95.134" dyno=web.1 connect=1ms service=287ms status=500 bytes=1714
+2016-05-25T20:10:23.397195+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=foodieapp.herokuapp.com request_id=dd07185a-6fbf-43a9-b054-d2ac42f032d7 fwd="201.239.95.134" dyno=web.1 connect=2ms service=18ms status=200 bytes=188
