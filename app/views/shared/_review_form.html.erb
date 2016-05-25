@@ -1,0 +1,27 @@
+<section class="review_form">
+<% if @shine == nil %>
+<%= form_for(@review) do |f| %>
+  <%= hidden_field_tag "product_id", @product.id %>		
+  <div class="field">
+	<%= render 'shared/error_messages', object: f.object %>	
+    <%= f.text_area :content, placeholder: "Compose new review...", class: 'form-control' %>
+    <fieldset class="rating">
+	    <legend>Please rate:</legend>
+        <%= f.radio_button :review_grade, '5' %>
+        <%= f.label 'review_grade_5', "Bad" %>
+        <%= f.radio_button :review_grade, '4' %>
+        <%=f.label 'review_grade_4', "Not that Bad" %>
+        <%= f.radio_button :review_grade, '3' %>
+        <%= f.label 'review_grade_3', "Meh"%>
+        <%= f.radio_button :review_grade, '2' %>
+        <%= f.label 'review_grade_2', "Great" %>
+        <%= f.radio_button :review_grade, '1' %>
+        <%= f.label 'review_grade_1', "Amazing" %>
+	</fieldset>
+ </div>
+  <%= f.submit "Post review", class: "btn btn-primary" %>
+<% end %>
+<% else %>
+<div class="alert alert-info" role="alert">You've already posted a review</div>
+<% end %>
+</section>

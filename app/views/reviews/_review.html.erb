@@ -1,0 +1,18 @@
+<div class="media">
+  <div class="media-left">
+   <%= link_to  image_tag(review.user.avatar.url, class: 'media-object img-circle user_photo_feed'), current_user%> 
+   </div>
+  <div class="media-body">
+    <h4 class="media-heading"><%= link_to review.user.name, review.user %></h4>
+    <div class="media-right"><%= link_to  image_tag(review.product.image.url, class: 'media-object product_photo_feed'), review.product%>  </div>
+    <span class="review_content"><%= review.content %></span>
+    <div id="star" data-score="<%=review.review_grade%>"></div>
+    <span class="tsimestamp">
+       Posted <%= time_ago_in_words(review.created_at) %> ago.
+       <% if current_user?(review.user) %>
+         <%= link_to "delete", review, method: :delete,
+                                          data: { confirm: "You sure?" } %>
+       <% end %>
+     </span>
+  </div>
+</div>

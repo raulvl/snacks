@@ -60,6 +60,13 @@ p {
 
 
 /* header */
+.header_user_photo{
+  width: 30px;
+  height: 25px;
+  float: left;
+  border-radius: 4px;
+}
+
 
 #logo {
   float: left;
@@ -140,6 +147,18 @@ aside {
     }
   }
 }
+// avatar
+.user_photo_feed{
+  width: 64px; 
+  height: 64px;
+  float: left;
+  margin-right: 10px;
+}
+.user_photo_profile_feed{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
 
 .avatar {
   float: left;
@@ -207,5 +226,189 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+/* Products index */
+.product_desc{
+  display: inline-block;
+  position: absolute;
+}
+
+
+/* Reviews */
+ .review_content{
+  font-size: 16px;
+ }
+
+.microposts {
+  list-style: none;
+  padding: 0;
+  li {
+    padding: 10px 0;
+    border-top: 1px solid #e8e8e8;
+  }
+  .user {
+    margin-top: 5em;
+    padding-top: 0;
+  }
+  .content {
+    display: block;
+    margin-left: 60px;
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+  .timestamp {
+    color: $gray-light;
+    display: block;
+    margin-left: 60px;
+  }
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+.product_photo_feed{
+  width: 44px; 
+  height: 44px;
+  margin-right: 10px;
+  float: right;
+  border: 0px solid $gray-medium-light;
+}
+
+
+.thumbnail {
+  padding:0;
+}
+
+
+.item-image {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 50%;
+  border: 1px solid $gray-medium-light
+}
+.item-image img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+}
+.item-image .remove_item_image{
+  position: absolute;
+  float:right;
+}
+
+.caption_home_feed {
+  background-color: $gray-medium-light;
+  width: auto;
+  height: 210px;
+}
+
+// .caption_home_feed .details_review{
+//   position: absolute;
+//   bottom: 25px;
+// }
+
+.details_review{
+  font-size: 10px;
+  border-top: 1px solid #828282FF;
+  width: 100%;
+  padding-top: 2px;
+}
+
+.user_photo_home_feed {
+  width: 50px; 
+  height: 50px;
+  float:left; 
+}
+
+.home_feed_user_info{
+  font-size: 10px;
+  float: right;
+  color: $gray-darker;
+}
+
+.btn-home-feed{
+  font-size: 20px;
+  color: #B80E30FF;
+}
+
+
+
+/* Rating CSS */
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    //top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
 }
 

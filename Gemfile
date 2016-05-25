@@ -29,6 +29,10 @@ gem 'fog',                     '1.36.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
+#rating jquery plugin
+#gem 'jquery-raty-rails', github: 'bmc/jquery-raty-rails' # Bleeding edge
+gem 'jquery-raty-rails', github: 'bmc/jquery-raty-rails' # Bleeding edge
+gem 'jquery-turbolinks'
 gem 'turbolinks'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'

@@ -2,10 +2,19 @@
 <div class="row">
   <aside class="col-md-4">
     <section class="user_info">
-      <h1>
-      	<span class="avatar"><%= image_tag @user.avatar.thumb.url %></span>				
-        <%= @user.name %>
-      </h1>	
+     	<span class="avatar"><%= link_to image_tag(@user.avatar.url, class: 'media-object img-circle user_photo_profile_feed'), current_user%>
+</span>				
+      <h3> <%= @user.name %> </h3>
     </section>
   </aside>
+	<div class="col-md-8">
+    <% if @user.reviews.any? %>
+      <h3>Reviews (<%= @user.reviews.count %>)</h3>
+      <ol class="microposts">
+        <%= render @reviews_user %>
+      </ol>
+      <%= will_paginate @reviews_user %>
+    <% end %>
+  </div>
 </div>
+

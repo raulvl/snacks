@@ -18,8 +18,8 @@
             <li><%= link_to "Users", users_path %></li>
             <li><%= link_to "Snacks", products_path %></li>
             <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                Account <b class="caret"></b>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                 Account <%= image_tag current_user.avatar.thumb.url, class: 'media-object header_user_photo'%><b class="caret"></b>
                 </a>
                 <ul class="dropdown-menu">
                   <li><%= link_to "Profile", current_user %></li>

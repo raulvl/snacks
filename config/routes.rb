@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :categories
-  resources :products
   get 'password_resets/new'
 
   get 'password_resets/edit'
@@ -17,9 +15,11 @@ Rails.application.routes.draw do
   delete 'logout'  => 'sessions#destroy'
   resources :users
   resources :account_activations, only: [:edit]
-  resources :password_resets,     only: [:new, :create, :edit, :update]
-
-  
+  resources :password_resets, only: [:new, :create, :edit, :update]
+  resources :reviews, only: [:create, :destroy]
+  resources :categories
+  resources :products
+ 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

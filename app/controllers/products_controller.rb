@@ -10,6 +10,10 @@ class ProductsController < ApplicationController
   # GET /products/1
   # GET /products/1.json
   def show
+    @product = Product.find_by(id: params[:id])
+    @shine = Review.find_by(user_id: current_user.id, product_id: @product.id)
+    @review = @product.reviews.build if logged_in?
+    @reviews = @product.feed.paginate(page: params[:page])
   end
 
   # GET /products/new

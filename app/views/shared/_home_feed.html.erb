@@ -1,0 +1,34 @@
+<hr>
+<div class="container">
+  <div class="row">
+        <% @feed_items.each do |review| %>
+    <div class="col-xs-12 col-sm-4 col-md-4">
+      <div class="thumbnail">
+         <div class="item-image">
+            <%= link_to  image_tag(review.product.image.url, class: 'media-object home_feed'), review.product%>
+            <div class="remove_item_image">
+            
+            </div>
+         </div> 
+          <div class="caption caption_home_feed">
+            <h4><%= link_to image_tag(review.user.avatar.thumb.url, class: 'media-object img-circle user_photo_home_feed'), current_user%><%= link_to review.product.name, review.product %>  
+              <% if current_user?(review.user) %>
+               <%= link_to "", review, method: :delete,
+                   data: { confirm: "You sure?" }, class: 'glyphicon glyphicon-remove-circle text-danger btn-home-feed pull right' %>
+               <% end %>  
+            </h4>
+            <div id="star" data-score="<%=review.review_grade%>"></div>
+            <br>
+            <p><%= review.content %></p>
+          <div class="details_review">  
+            <span class="time_review">
+               Posted <%= time_ago_in_words(review.created_at) %> ago.
+            </span>
+           </div>
+         </div>
+      </div>
+    </div>
+    <% end %>
+ </div><!--/row-->
+</div><!--/container -->
+

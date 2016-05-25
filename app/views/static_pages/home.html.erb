@@ -1,3 +1,12 @@
+<% if logged_in? %>
+  <div class="row">
+
+    <div class="col-md-8">
+      <h3>Latest Reviews</h3>
+      <%= render 'shared/home_feed' %>
+    </div>
+  </div>
+<% else %>
 <div class="center jumbotron">
 	<h1>Welcome to Snacks App</h1>
 
@@ -7,4 +16,4 @@
 
  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
 </div>
-
+<% end %>
